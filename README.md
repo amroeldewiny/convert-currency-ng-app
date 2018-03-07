@@ -1,7 +1,7 @@
 # NgCurrency Frontend app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
-Convert Currency simple app working with laravel and angular
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2. <br /> 
+Convert Currency simple app working with laravel and angular <br />
 The app build with laravel 5.6 and angualr 5 to create simple authentication app
 
 ## Tools need it
