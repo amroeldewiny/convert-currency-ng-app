@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.navbar{
+    margin-bottom: 25px;
+}
+
+.user{
+    margin-top: 25px;
+}
+
+.logout{
+    cursor: pointer;
+}
