@@ -9,9 +9,9 @@ The app build with laravel 5.6 and angualr 5 to create simple authentication app
 Git Bash, nodeJS, angular cli -> install all tools
 
 ## Important steps
-1- npm i -g @angular/cli
-2- cd to project folder
-3- npm i
+1- npm i -g @angular/cli <br />
+2- cd to project folder --- folder name ngCurrency <br />
+3- npm i <br />
 
 
 ## Development server
