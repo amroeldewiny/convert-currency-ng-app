@@ -1,0 +1,49 @@
+<h2 class="text-center">Currency convert</h2>
+<div class="col-md-6 offset-md-3">
+  <header class="container">
+    <h5>Base Currency: {{base}} -
+      <small>Date: {{date}}</small>
+    </h5>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <select class="form-control" [(ngModel)]="baseCurrency">
+          <option *ngFor="let rate of rates" [value]="rate.rate">
+            {{rate.name}}
+          </option>
+        </select>
+      </div>
+      <!-- col-sm-4 -->
+      <div class="col-sm-8">
+        <input type="number" class="form-control" [(ngModel)]="currencyOne" (keyup)="convert('from')">
+      </div>
+      <!-- col-sm-8 -->
+    </div>
+    <!-- row -->
+    <hr>
+    <div class="row">
+      <div class="col-sm-4">
+        <select class="form-control" [(ngModel)]="convertCurrency">
+          <option *ngFor="let rate of rates" [value]="rate.rate">
+            {{rate.name}}
+          </option>
+        </select>
+      </div>
+      <!-- col-sm-4 -->
+      <div class="col-sm-8">
+        <input type="number" class="form-control" [(ngModel)]="currencyTwo" (keyup)="convert('to')">
+      </div>
+      <!-- col-sm-8 -->
+    </div>
+    <!-- row -->
+  </div>
+  <div class="container user" *ngIf="user">
+    <ul class="list-group">
+      <li class="list-group-item active">User information</li>
+      <li class="list-group-item">Name: {{user.name}}</li>
+      <li class="list-group-item">Email: {{user.email}}</li>
+    </ul>
+  </div>
+  <!-- container -->
+</div>

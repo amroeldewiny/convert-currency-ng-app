@@ -1,0 +1,13 @@
+<h2 class="text-center">Login page</h2>
+<div class="col-md-6 offset-md-3">
+  <form [formGroup]="theForm" (ngSubmit)="login()" novalidate>
+    <div class="form-group">
+      <input type="email" class="form-control" formControlName="email" placeholder="Your email eddress">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" formControlName="password" placeholder="Your password">
+    </div>
+
+    <button type="submit" class="btn btn-info btn-lg btn-block" [disabled]="theForm.invalid">Login</button>
+  </form>
+</div>
